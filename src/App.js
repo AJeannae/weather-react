@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import videoBg from "./assets/galaxy.mp4";
+import Search from "./Search.js";
+import GithubLink from "./GithubLink.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <video src={videoBg} autoPlay loop muted />
+      <div className="Weather-app-content">
+        <Search />
+      </div>
+      <GithubLink />
     </div>
   );
 }
